@@ -1,8 +1,17 @@
 import React from 'react';
 import './App.css';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn} from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBFormInline} from 'mdbreact';
 
 function App() {
+  // state = {
+  //   radio: 2
+  // };
+
+  // onClick = nr => () => {
+  //   this.setState({
+  //     radio: nr
+  //   });
+  // };
   return (
     <MDBContainer>
       <MDBRow>
@@ -18,6 +27,25 @@ function App() {
               <MDBInput label="Your name" group type="text" validate />
               <MDBInput label="Your email" group type="text" validate />
               <MDBInput label="Your password" group type="password" validate />
+
+              <div>
+                <p>Interested in seeing ads or publishing your own ads?</p>
+                <select className="browser-default custom-select">
+                  <option>Select an option</option>
+                  <option value="1">Seeing ads</option>
+                  <option value="2">Publishing ads</option>
+                </select>
+              </div>
+
+              <br />
+
+              <MDBFormInline>
+                <h7>Interested in -   </h7>
+                <MDBInput label='ads' type='radio' id='radio1' containerClass='mr-5' />
+                <MDBInput label='deals' type='radio' id='radio2' containerClass='mr-5' />
+                <MDBInput label='both' type='radio' id='radio3' containerClass='mr-5' />
+              </MDBFormInline>
+
               <MDBInput label="Age" group type="number" validate />
               <MDBInput label="Gender" group type="text" validate />
               <MDBInput label="Marital Status" group type="text" validate />
