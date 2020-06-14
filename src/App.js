@@ -51,10 +51,18 @@ function App() {
               <MDBInput label="Marital Status" group type="text" validate />
               <MDBInput label="Occupation" group type="text" validate />
               <MDBInput label="Nationality" group type="text" validate />
+
+              <div>
+                <MDBFormInline>
+                  <MDBInput label='shoes' type='checkbox' id='checkbox1' containerClass='mr-5' />
+                  <MDBInput label='electronics' type='checkbox' id='checkbox2' containerClass='mr-5' />
+                  <MDBInput label='flights' type='checkbox' id='checkbox3' containerClass='mr-5' />
+                </MDBFormInline>
+              </div>
               
-              <p className="font-small grey-text d-flex justify-content-center">
+              {/* <p className="font-small grey-text d-flex justify-content-center">
                 <a href="#!" className="dark-grey-text ml-1 font-weight-bold" > Forgot Password? </a>
-              </p>
+              </p> */}
 
               <div className="text-center">
                 <MDBBtn color="grey" rounded type="button" className="z-depth-1a" > Sign Up </MDBBtn>
